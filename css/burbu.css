@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    min-height: 100vh;
+    background: rgb(13, 5, 128);
+    
+}
+.container
+{
+    position: relative;
+    width: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgb(13, 213, 228);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10pxx rgb(21, 114, 121),
+    0 0 50px rgb(13, 213, 228), 
+    0 0 100px rgb(13, 213, 228);
+    animation: animate 15s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh);
+    }
+
+}
